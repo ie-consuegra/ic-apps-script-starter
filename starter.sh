@@ -6,6 +6,6 @@ echo "*  Initialize this directory as a Git repository..."
 git init
 echo "*  Remember to create the project with clasp..."
 printf "\n"
-echo "clasp create <project-title> --rootDir ./dist --type standalone"
+echo "clasp create --title <project-title> --rootDir ./dist"
 printf "\n"
 echo "✔️  Done, now you can delete this file and the README one"

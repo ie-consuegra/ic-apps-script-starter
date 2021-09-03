@@ -19,7 +19,7 @@ sh starter.sh
 * Create a new Google Apps Script project using clasp.
 
 ```
-clasp create <project-title> --rootDir ./dist --type standalone
+clasp create --title "project-title" --rootDir ./dist
 ```
 
 * Delete starter.sh and README.md files.
