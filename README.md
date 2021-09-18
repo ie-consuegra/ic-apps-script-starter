@@ -7,15 +7,14 @@ git clone https://github.com/ie-consuegra/ic-apps-script-starter my-project
 
 cd my-project
 
-npm install
 ```
+* Optional: Open package.json and package-lock.json and change the name attribute from ic-apps-script-starter to that of your own project
 
-* Run starter.sh, this will remove any git reference to this repository and initialize your own local repo.
+* Run starter.sh, this will remove any git reference to this repository, will initialize your own local repo and install node developer dependencies.
 
 ```
 sh starter.sh
 ```
-
 * Create a new Google Apps Script project using clasp.
 
 ```

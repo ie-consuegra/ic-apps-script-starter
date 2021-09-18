@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "html-build": "^1.0.1"
+    "html-build": "^1.0.1",
+    "html-minifier-terser": "^6.0.2"
   }
 }

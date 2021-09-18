@@ -1,5 +1,7 @@
 dist/*
 !dist/.claspignore
 src/client/bundles/*
+src/server/bundle/*
 !src/client/bundles/.gitkeep
+!src/server/bundle/.gitkeep
 node_modules/
