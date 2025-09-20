@@ -15,10 +15,13 @@ cd my-project
 ```
 sh starter.sh
 ```
-* Create a new Google Apps Script project using clasp.
+* Create a new Google Apps Script project using clasp or clone an existent one.
 
 ```
 clasp create --title "project-title" --rootDir ./dist
+```
+```
+clasp clone <scriptId> --rootDir ./dist
 ```
 
 * Delete starter.sh and README.md files.
