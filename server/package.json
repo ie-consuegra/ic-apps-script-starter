@@ -1,0 +1,32 @@
+{
+  "name": "efiz-api",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "Google",
+    "apps",
+    "script"
+  ],
+  "license": "ISC",
+  "author": "Ivan Consuegra",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@types/google-apps-script": "^1.0.82",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "eslint": "7.5",
+    "eslint-config-airbnb": "18.2",
+    "eslint-plugin-googleappsscript": "^1.0.5",
+    "gas-webpack-plugin": "^2.6.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
+  }
+}

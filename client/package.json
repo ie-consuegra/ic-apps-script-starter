@@ -1,0 +1,37 @@
+{
+  "name": "efiz-frontend",
+  "version": "0.0.1",
+  "description": "",
+  "source": [
+    "index.html",
+    "src/server/index.js"
+  ],
+  "targets": {
+    "default": {
+      "distDir": "../dist"
+    }
+  },
+  "scripts": {
+    "build-css": "tailwindcss build -i ./styles.css -o ./css/index.css",
+    "bundle": "just-inline",
+    "build-t": "just-inline && tailwindcss build -i ./styles.css -o ./css/index.css && just-inline && html-minifier-terser --collapse-whitespace --remove-comments --minify-js true --minify-css true ./bundle/frontend.html > ../dist/frontend.html",
+    "build": "just-inline && html-minifier-terser --collapse-whitespace --remove-comments --minify-js true --minify-css true ./bundle/frontend.html > ../dist/frontend.html",
+    "dev-t": "just-inline && tailwindcss build -i ./styles.css -o ./css/index.css && just-inline && html-minifier-terser --remove-comments ./bundle/frontend.html > ../dist/frontend.html",
+    "dev": "just-inline && html-minifier-terser --remove-comments ./bundle/frontend.html > ../dist/frontend.html"
+  },
+  "author": "Ivan Consuegra",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/google-apps-script": "^1.0.82",
+    "eslint": "7.5",
+    "eslint-config-airbnb": "18.2",
+    "eslint-plugin-googleappsscript": "^1.0.5",
+    "html-minifier-terser": "^7.2.0",
+    "just-inline": "^0.0.3",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "-": "^0.0.1"
+  }
+}

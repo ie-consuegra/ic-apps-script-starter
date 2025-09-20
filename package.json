@@ -4,13 +4,19 @@
   "description": "",
   "main": "dist/backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd client && npm run build",
+    "server": "cd server && npm run build",
+    "debug-server": "cd server && npm run dev",
+    "build": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "npm run build && clasp push -f",
+    "push-client": "npm run client && clasp push -f",
+    "push-server": "npm run server && clasp push -f",
+    "debug-api": "npm run debug-server && clasp push -f"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "html-build": "^1.0.1",
-    "html-minifier-terser": "^6.0.2"
+    "concurrently": "^9.1.2"
   }
 }
